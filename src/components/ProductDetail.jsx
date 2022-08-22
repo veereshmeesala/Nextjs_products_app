@@ -11,7 +11,7 @@ const ProductDetail = ({ product }) => {
                 <p><strong>Brand</strong>: <span style={{ color: 'red' }}>{brand}</span></p>
                 <p><strong>Description</strong>: {product.description}</p>
                 <hr />
-                <p><strong>Price</strong>: {price}</p>
+                <p><strong>Price</strong>: <span style={{ color: 'red' }}>${price}</span></p>
             </div>
         </div>
     </article>);

@@ -10,7 +10,7 @@ const  ShopNavBar = () => {
   return (
     <>
 
-<Navbar bg="primary" expand="lg">
+<Navbar bg="primary" variant="dark" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">Shop</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -30,7 +30,7 @@ const  ShopNavBar = () => {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="dark">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
