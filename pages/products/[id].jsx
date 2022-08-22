@@ -1,6 +1,10 @@
 import React from 'react'
 import { useRouter } from 'next/router';
+import { Container } from 'react-bootstrap';
+import 'reset-css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductDetail from '../../src/components/ProductDetail';
+import ShopNavBar from '../../src/components/nav';
 
 export default ({ data }) => {
   const router = useRouter();
@@ -9,7 +13,17 @@ export default ({ data }) => {
   console.log('log', data);
 
   return (
-    <ProductDetail id={id} product={data}/>
+    <div>
+          <ShopNavBar />
+          <div style={{ backgroundColor: 'rgba(0,0,0,.05)', paddingLeft: '10px'}}>
+            <h1>Products details for {data.title}</h1>
+          </div>
+          <Container fluid>
+            <ProductDetail id={id} product={data}/>
+          </Container>
+        
+        </div>
+    
   )
 }
 
