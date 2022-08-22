@@ -1,18 +1,20 @@
 import React from 'react';
+import 'reset-css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Product from '../../src/components/Product';
+import ShopNavBar from '../../src/components/nav';
 
 export default ({ data }) => {
-    // const [productsData] = data.pro;
-    console.log('products', JSON.stringify(data.products));
-    const Products = new Array(15).fill(1).map((e, i) => ({id: i, title: `product: ${i}`}));
 
     return (
         <div>
+          <ShopNavBar />
           <h1>Products</h1>
-    
+        <div className='products-list' style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
           {data && data.products.map(productItem => (
             <Product product={productItem} />
           ))}
+           </div>
         </div>
       )
 }
