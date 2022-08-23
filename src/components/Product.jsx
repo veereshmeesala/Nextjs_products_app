@@ -7,7 +7,6 @@ import ReactStars from 'react-stars'
 
 const Product = ({ product }) => {
     const { id, title, rating, images, price } = product;
-    console.log('images', images);
     return (<div>
 <Link key={id} href="/products/[id]" as={`/products/${id}`}>
 <Card style={{ width: '18rem', marginRight: '5px', marginBottom: '5px', cursor: 'pointer' }}>
