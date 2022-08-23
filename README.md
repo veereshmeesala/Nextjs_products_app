@@ -6,3 +6,12 @@ Ecommerce Products app using next.js and react.js
 yarn install
 
 yarn dev
+
+## To run tests
+
+yarn test
+
+
+## pending things to do 
+Search functionality
+Unit test Code coverage 
