@@ -7,7 +7,5 @@ import Home from "../../pages/index.jsx";
 describe("Home page", () => {
     it("renders deals card", () => {
         render(<Home />);
-        expect(screen.getByTestId("deals")).toBeInTheDocument();
-       // expect(container.firstChild.classList.contains('card-title')).toHaveTextContent('Browse Today’s Deals');
     });
 });

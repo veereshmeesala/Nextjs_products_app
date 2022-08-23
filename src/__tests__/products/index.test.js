@@ -7,7 +7,5 @@ jest.mock('reset-css');
 describe("Products page", () => {
     it("renders Products List", () => {
         render(<ProductsList />);
-       //expect(screen.getByTestId("deals")).toBeInTheDocument();
-       // expect(container.firstChild.classList.contains('card-title')).toHaveTextContent('Browse Today’s Deals');
     });
 });
